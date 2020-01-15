@@ -9,4 +9,6 @@ Sphinx==1.8.5
 twine==1.14.0
 Click==7.0
 pytest==4.6.5
+pytest-cov==2.8.1  # https://github.com/pytest-dev/pytest-cov
 pytest-runner==5.1
+responses==0.10.9  # https://github.com/getsentry/responses

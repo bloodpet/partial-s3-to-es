@@ -10,7 +10,12 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=7.0', ]
+requirements = [
+    'Click>=7.0',
+    'elasticsearch>=7.0.0,<8.0.0',
+    'boto3>=1.10.49',
+    'python-configuration>=0.5.0',
+]
 
 setup_requirements = ['pytest-runner', ]
 
@@ -35,6 +40,7 @@ setup(
     entry_points={
         'console_scripts': [
             'partial_s3_to_es=partial_s3_to_es.cli:main',
+            's3_to_es=partial_s3_to_es.cli:main',
         ],
     },
     install_requires=requirements,

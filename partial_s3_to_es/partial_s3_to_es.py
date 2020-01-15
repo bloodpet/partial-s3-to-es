@@ -27,6 +27,7 @@ def load_config(filename=None):
         "s3.aws_access_key_id": None,
         "s3.aws_secret_access_key": None,
         "s3.bucket": None,
+        "log.pattern": r"(?P<timestamp>[^\t]+)\t(?P<index>[^\t]+)\t(?P<data>[^\s]+)",
     }
     if filename is None:
         cfg = config(

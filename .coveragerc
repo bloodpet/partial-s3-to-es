@@ -1,0 +1,2 @@
+[run]
+include = partial_s3_to_es/*
